@@ -16,8 +16,8 @@
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
 
-    <!-- Mars data -->
-    <div class="row" >
+    <!-- Latest Mars News -->
+        <div class="row" >
             <div class="col-md-12">
                 <div class="box">
                     <div class="page-header">
@@ -28,3 +28,65 @@
                 </div>
             </div>
         </div>
+
+
+     <!-- Featured Mars Image -->
+     <div class="row">
+            <div class="col-md-8">
+                <h1><strong>Featured Mars Image</strong></h1>
+                <img class="img-responsive" src="{{mars.featured_image_url}}" alt="Featured Mars Image">
+            </div>
+
+    <!-- Current Weather on Mars -->
+            <div class="col-md-4">
+                <div class="boxed">
+                    <h3><strong>Current Weather on Mars</strong></h3>
+                    <h5>{{mars.mars_weather}}</h5>
+                </div>
+            </div>
+            <br>
+     <!-- Mars Facts -->
+                    <h3><strong>Mars Facts</strong></h3>
+                        <div class="content table-responsive">
+                            <table class="table table-bordered table-inverse">
+                                <tr>
+                                    <th>Mars_planet_profile</th>
+                                    <th>Value</th>
+                                </tr>
+
+                                {% for t in mars.mars_facts %}
+                                    <tr>
+                                        {% for i in t %}
+                                            <td>{{i}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                {% endfor %}
+                            </table>
+
+                        </div>
+        </div>
+
+        <!-- Mars Hemispheres -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="center-block"><strong>Mars Hemispheres</strong></h1>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="box">
+                        <div class="content">
+                        {% for i in range(0,4) %}
+                            <img class="img-thumbnail" src="{{mars.mars_hemisphere[i].image_url}}" alt="Hemisphere Enhanced-i">
+                            <h3><strong>{{mars.mars_hemisphere[i].title}}</strong></h3>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</body>
+
+</html>
+
