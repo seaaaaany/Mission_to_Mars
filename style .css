@@ -1,0 +1,60 @@
+body {
+  background: lightblue;
+}
+/* every box is this size */
+
+.skyblue {
+  background: deepskyblue;
+}
+
+.box{
+  padding: 10px;
+  background: white;
+  margin-top:50px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:20px;
+  align-content: center;
+}
+
+
+// Class
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Usage as a mixin
+.element {
+  .center-block();
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+// Usage as mixins
+.element {
+  .pull-left();
+}
+.another-element {
+  .pull-right();
+}
+@gray-light:   lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+h1 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 25px;
+}
+
+
+p{
+    font-size: 20px;
+}
