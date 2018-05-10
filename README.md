@@ -3,13 +3,13 @@
 ![mission_to_mars](Images/mission_to_mars.jpg)
 
 
-In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
+In this assignment, I built a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
 
 ## Step 1 - Scraping
 
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
+I completed initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
-* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+* Created a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
 
 ### NASA Mars News
 
@@ -17,9 +17,9 @@ Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, an
 
 ```python
 # Example:
-news_title = "NASA's Next Mars Mission to Investigate Interior of Red Planet"
+news_title = "NASA's First Deep-Space CubeSats Say: 'Polo!'"
 
-news_p = "Preparation of NASA's next spacecraft to Mars, InSight, has ramped up this summer, on course for launch next May from Vandenberg Air Force Base in central California -- the first interplanetary launch in history from America's West Coast."
+news_p = "MarCO is a pair of tiny spacecraft that launched with NASA's InSight lander today."
 ```
 
 ### JPL Mars Space Images - Featured Image
