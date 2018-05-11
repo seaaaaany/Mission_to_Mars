@@ -61,7 +61,8 @@ def scrape():
     # create soup object from html
     weather_soup = BeautifulSoup(html, 'html.parser')
     weather = weather_soup.find('div', class_='js-tweet-text-container')
-    mars_weather = weather.p.text.lstrip()
+
+    mars_weather = weather.p.text
     # transfer data into mars_data db
     mars_data["mars_weather"] = mars_weather
 
